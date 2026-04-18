@@ -14,7 +14,7 @@ main {
 .cs-back a {
   font-size: 13px;
   font-weight: 500;
-  color: #BBBDBC;
+  color: #5C5C5C;
   text-decoration: none;
   letter-spacing: 0.02em;
   transition: color 0.15s ease;
@@ -41,7 +41,7 @@ main {
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.12em;
-  color: #BBBDBC;
+  color: #5C5C5C;
 }
 
 .cs-hero h1 {
@@ -57,7 +57,7 @@ main {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.7;
-  color: #555555;
+  color: #5C5C5C;
   max-width: 640px;
 }
 
@@ -141,7 +141,7 @@ main {
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #245F73;
+  color: #733E24;
   margin-bottom: 20px;
 }
 
@@ -171,7 +171,7 @@ main {
 .cs-next {
   font-size: 13px;
   font-weight: 500;
-  color: #BBBDBC;
+  color: #5C5C5C;
   text-decoration: none;
   letter-spacing: 0.02em;
   transition: color 0.15s ease;

@@ -1,9 +1,10 @@
 /* ── Palette
    #F2F0EF  warm off-white  → background
-   #BBBDBC  cool gray       → borders, muted elements
-   #245F73  teal            → accent, labels, button, links
-   #733E24  mahogany        → secondary accent, closing line
-   #1C1C1C  near-black      → body text, headings
+   #BBBDBC  cool gray       → borders only
+   #5C5C5C  dark gray       → nav, footer, muted text, dates, summaries
+   #245F73  teal            → pills, buttons, links
+   #733E24  mahogany        → all section header labels
+   #1C1C1C  near-black      → body / heading content text
 ─────────────────────────────────────────── */
 
 :root { color-scheme: light only; }
@@ -80,12 +81,13 @@ nav a {
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #BBBDBC;
+  color: #5C5C5C;
   text-decoration: none;
   transition: color 0.15s ease;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
   color: #245F73;
 }
 
@@ -125,7 +127,7 @@ main {
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #BBBDBC;
+  color: #5C5C5C;
 }
 
 .hero h1 {
@@ -162,7 +164,7 @@ main {
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #245F73;
+  color: #733E24;
 }
 
 /* ─── Leadership ─── */
@@ -212,7 +214,7 @@ main {
   font-size: 10px;
   font-weight: 600;
   letter-spacing: 0.12em;
-  color: #BBBDBC;
+  color: #5C5C5C;
   margin-bottom: 10px;
 }
 
@@ -266,7 +268,7 @@ main {
 .work-card p {
   font-size: 13px;
   font-weight: 400;
-  color: #7a7a7a;
+  color: #5C5C5C;
   line-height: 1.6;
 }
 
@@ -336,7 +338,7 @@ main {
 .contact-intro {
   font-size: 15px;
   font-weight: 400;
-  color: #7a7a7a;
+  color: #5C5C5C;
   margin-bottom: 32px;
 }
 
@@ -358,7 +360,7 @@ main {
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #BBBDBC;
+  color: #5C5C5C;
 }
 
 .form-row input,
@@ -442,12 +444,12 @@ footer {
 
 footer span {
   font-size: 12px;
-  color: #BBBDBC;
+  color: #5C5C5C;
 }
 
 footer a {
   font-size: 12px;
-  color: #BBBDBC;
+  color: #5C5C5C;
   text-decoration: none;
   transition: color 0.15s ease;
 }
