@@ -205,6 +205,7 @@ main {
   gap: 0;
   cursor: pointer;
   text-decoration: none;
+  color: inherit;
 }
 
 .work-index {
@@ -267,6 +268,27 @@ main {
   font-weight: 400;
   color: #7a7a7a;
   line-height: 1.6;
+}
+
+/* ─── Skill pills (shared across work cards + case studies) ─── */
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.pill {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #245F73;
+  background-color: rgba(36, 95, 115, 0.09);
+  padding: 4px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
 }
 
 /* ─── Companies ─── */
