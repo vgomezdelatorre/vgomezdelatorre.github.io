@@ -98,18 +98,7 @@ main {
   padding: 0 4vw;
 }
 
-/* ─── Hero ─── */
-.hero {
-  padding: 72px 0 56px;
-  border-bottom: 1px solid #BBBDBC;
-}
-
-.hero-inner {
-  display: flex;
-  align-items: center;
-  gap: 48px;
-}
-
+/* ─── Hero (me.html photo placeholder) ─── */
 .hero-photo {
   flex-shrink: 0;
   width: 200px;
@@ -130,19 +119,130 @@ main {
   color: #5C5C5C;
 }
 
-.hero h1 {
+/* ─── Scroll offset for sticky header (~65px tall) ─── */
+.hero,
+.section,
+.section-intro,
+.section-thought {
+  scroll-margin-top: 65px;
+}
+
+/* ─── Intro section (home hero + leadership + companies) ─── */
+.section-intro {
+  padding: 72px 0 56px;
+  border-bottom: 1px solid #BBBDBC;
+}
+
+.intro-headline {
   font-size: clamp(2.2rem, 5vw, 3.8rem);
   font-weight: 700;
   line-height: 1.08;
   letter-spacing: -0.04em;
   color: #1C1C1C;
-  max-width: 600px;
+  max-width: 680px;
+  margin-bottom: 48px;
 }
 
-/* ─── Scroll offset for sticky header (~65px tall) ─── */
-.hero,
-.section {
-  scroll-margin-top: 65px;
+.intro-body {
+  max-width: 720px;
+  margin-bottom: 52px;
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.intro-text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #1C1C1C;
+}
+
+.link-more {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #245F73;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+
+.link-more:hover {
+  opacity: 0.7;
+}
+
+.intro-companies {
+  border-top: 1px solid #BBBDBC;
+  padding-top: 32px;
+}
+
+.intro-companies-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #733E24;
+  margin-bottom: 20px;
+}
+
+/* ─── Latest Thought (home preview) ─── */
+.section-thought {
+  border-bottom: none;
+}
+
+.thought-preview {
+  display: block;
+  text-decoration: none;
+  max-width: 680px;
+  padding: 32px 36px;
+  border: 1px solid #BBBDBC;
+  border-radius: 8px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.thought-preview:hover {
+  border-color: #245F73;
+  box-shadow: 0 4px 24px rgba(36, 95, 115, 0.07);
+}
+
+.thought-date {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #5C5C5C;
+  margin-bottom: 12px;
+}
+
+.thought-title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: #1C1C1C;
+  margin-bottom: 14px;
+}
+
+.thought-excerpt {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #5C5C5C;
+  margin-bottom: 20px;
+}
+
+.thought-read-more {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #245F73;
 }
 
 /* ─── Sections ─── */
@@ -464,21 +564,13 @@ footer a:hover {
   nav     { gap: 18px; }
   main    { padding: 0 6vw; }
 
-  .hero   { padding: 48px 0 40px; }
+  .section-intro { padding: 48px 0 40px; }
 
-  .hero-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 28px;
-  }
-
-  .hero-photo {
-    width: 120px;
-    height: 120px;
-    border-radius: 14px;
-  }
+  .intro-headline { margin-bottom: 32px; }
 
   .section { padding: 44px 0; }
+
+  .thought-preview { padding: 24px 20px; }
 
   .work-grid {
     grid-template-columns: 1fr;

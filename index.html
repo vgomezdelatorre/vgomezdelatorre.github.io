@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Valerie Gomez de la Torre</title>
+  <title>vgdlt — Valerie Gomez de la Torre</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -11,12 +11,11 @@
 </head>
 <body>
 
-  <!-- Header -->
   <header>
     <a href="#top" class="site-name">vgdlt</a>
     <nav>
-      <a href="#leadership">Style</a>
-      <a href="#work">Work</a>
+      <a href="#intro">Style</a>
+      <a href="work.html">Work</a>
       <a href="thoughts.html">Thoughts</a>
       <a href="me.html">Me</a>
     </nav>
@@ -24,32 +23,48 @@
 
   <main>
 
-    <!-- Hero -->
-    <section id="top" class="hero">
-      <div class="hero-inner">
-        <div class="hero-photo">
-          <span>Photo</span>
+    <!-- ── Intro: hero + leadership + companies ── -->
+    <section id="top" class="section-intro">
+
+      <h1 class="intro-headline">Building products<br>and the people behind them.</h1>
+
+      <div id="intro" class="intro-body">
+        <div class="intro-text">
+          <p>My leadership style is a blend of servant + player-coach.</p>
+          <p>I call it <mark class="highlight">Enablement Leadership.</mark><br>
+          It combines support with accountability and reflects an active role in creating the conditions for success.</p>
+          <p>I enable designers to think critically, collaborate effectively across disciplines, navigate constraints with confidence, and grow their craft while delivering meaningful outcomes. I enable product managers by grounding decisions in strong research and shared priorities. I enable marketing partners by aligning the in-product experience with external messaging so the story feels cohesive. I enable engineering by making the "why" behind design decisions visible and inviting their ideas early, so direction is shaped together rather than handed down.</p>
+          <p>I enable how people, process, and product interact and make decisions, building trust along the way. With trust in place, we align on today's priorities while shaping strategy for what needs to scale tomorrow.</p>
+          <p class="leadership-closing">If you enable people to do what they do best. Trust grows. Great work follows.</p>
+          <a href="me.html" class="link-more">Learn more →</a>
         </div>
-        <h1>Building products<br>and the people behind them.</h1>
       </div>
+
+      <!-- Where I Have Worked — part of intro -->
+      <div class="intro-companies">
+        <span class="intro-companies-label">Where I have worked</span>
+        <div class="companies-row">
+          <div class="company-icon" title="Company One">
+            <img src="assets/logo-1.svg" alt="Company One" onerror="this.outerHTML='<div class=\'logo-fallback\'>Company</div>'" />
+          </div>
+          <div class="company-icon" title="Company Two">
+            <img src="assets/logo-2.svg" alt="Company Two" onerror="this.outerHTML='<div class=\'logo-fallback\'>Company</div>'" />
+          </div>
+          <div class="company-icon" title="Company Three">
+            <img src="assets/logo-3.svg" alt="Company Three" onerror="this.outerHTML='<div class=\'logo-fallback\'>Company</div>'" />
+          </div>
+          <div class="company-icon" title="Company Four">
+            <img src="assets/logo-4.svg" alt="Company Four" onerror="this.outerHTML='<div class=\'logo-fallback\'>Company</div>'" />
+          </div>
+          <div class="company-icon" title="Company Five">
+            <img src="assets/logo-5.svg" alt="Company Five" onerror="this.outerHTML='<div class=\'logo-fallback\'>Company</div>'" />
+          </div>
+        </div>
+      </div>
+
     </section>
 
-    <!-- Leadership Style -->
-    <section id="leadership" class="section">
-      <div class="section-header">
-        <h2>Style</h2>
-      </div>
-      <div class="leadership-text">
-        <p>My leadership style is a blend of servant + player-coach.</p>
-        <p>I call it <mark class="highlight">Enablement Leadership.</mark><br>
-        It combines support with accountability and reflects an active role in creating the conditions for success.</p>
-        <p>I enable designers to think critically, collaborate effectively across disciplines, navigate constraints with confidence, and grow their craft while delivering meaningful outcomes. I enable product managers by grounding decisions in strong research and shared priorities. I enable marketing partners by aligning the in-product experience with external messaging so the story feels cohesive. I enable engineering by making the "why" behind design decisions visible and inviting their ideas early, so direction is shaped together rather than handed down.</p>
-        <p>I enable how people, process, and product interact and make decisions, building trust along the way. With trust in place, we align on today's priorities while shaping strategy for what needs to scale tomorrow.</p>
-        <p class="leadership-closing">If you enable people to do what they do best. Trust grows. Great work follows.</p>
-      </div>
-    </section>
-
-    <!-- Work -->
+    <!-- ── Work ── -->
     <section id="work" class="section">
       <div class="section-header">
         <h2>Work</h2>
@@ -127,63 +142,17 @@
       </div>
     </section>
 
-    <!-- Where I Have Worked -->
-    <section id="companies" class="section">
+    <!-- ── Latest Thought ── -->
+    <section id="thoughts-preview" class="section section-thought">
       <div class="section-header">
-        <h2>Where I Have Worked</h2>
+        <h2>Thoughts</h2>
       </div>
-      <div class="companies-row">
-
-        <div class="company-icon" title="Company One">
-          <img src="assets/logo-1.svg" alt="Company One" onerror="this.outerHTML='<div class=\'logo-fallback\'>Company</div>'" />
-        </div>
-        <div class="company-icon" title="Company Two">
-          <img src="assets/logo-2.svg" alt="Company Two" onerror="this.outerHTML='<div class=\'logo-fallback\'>Company</div>'" />
-        </div>
-        <div class="company-icon" title="Company Three">
-          <img src="assets/logo-3.svg" alt="Company Three" onerror="this.outerHTML='<div class=\'logo-fallback\'>Company</div>'" />
-        </div>
-        <div class="company-icon" title="Company Four">
-          <img src="assets/logo-4.svg" alt="Company Four" onerror="this.outerHTML='<div class=\'logo-fallback\'>Company</div>'" />
-        </div>
-        <div class="company-icon" title="Company Five">
-          <img src="assets/logo-5.svg" alt="Company Five" onerror="this.outerHTML='<div class=\'logo-fallback\'>Company</div>'" />
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <div class="section-header">
-        <h2>Contact</h2>
-      </div>
-      <p class="contact-intro">Have something in mind? I'd love to hear from you.</p>
-
-      <form
-        class="contact-form"
-        id="contact-form"
-        action="https://formspree.io/f/YOUR_FORM_ID"
-        method="POST"
-        novalidate
-      >
-        <div class="form-row">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" />
-        </div>
-        <div class="form-row">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
-        </div>
-        <div class="form-row">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
-        </div>
-        <div class="form-actions">
-          <button type="submit" class="btn-submit" id="submit-btn">Send message</button>
-          <span class="form-status" id="form-status" role="status" aria-live="polite"></span>
-        </div>
-      </form>
+      <a href="thoughts.html" class="thought-preview">
+        <span class="thought-date">April 2026</span>
+        <h3 class="thought-title">On trust as infrastructure</h3>
+        <p class="thought-excerpt">I've been thinking about trust less as a soft thing and more as infrastructure. The same way a building needs plumbing and wiring before walls go up, teams need trust before real collaboration can happen. It's load-bearing&hellip;</p>
+        <span class="thought-read-more">Read more →</span>
+      </a>
     </section>
 
   </main>
@@ -192,51 +161,6 @@
     <span>© 2026 Valerie Gomez de la Torre</span>
     <a href="mailto:valeriegomez@gmail.com">valeriegomez@gmail.com</a>
   </footer>
-
-  <script>
-    const form = document.getElementById('contact-form');
-    const btn  = document.getElementById('submit-btn');
-    const status = document.getElementById('form-status');
-
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-
-      // Basic client-side validation
-      if (!form.checkValidity()) {
-        form.reportValidity();
-        return;
-      }
-
-      btn.disabled = true;
-      btn.textContent = 'Sending…';
-      status.className = 'form-status';
-      status.textContent = '';
-
-      try {
-        const res = await fetch(form.action, {
-          method: 'POST',
-          body: new FormData(form),
-          headers: { 'Accept': 'application/json' }
-        });
-
-        if (res.ok) {
-          form.reset();
-          status.textContent = 'Message sent — I'll be in touch soon.';
-          status.className = 'form-status success visible';
-          btn.textContent = 'Send message';
-          btn.disabled = false;
-        } else {
-          const data = await res.json().catch(() => ({}));
-          throw new Error(data?.errors?.[0]?.message || 'Something went wrong.');
-        }
-      } catch (err) {
-        status.textContent = err.message || 'Could not send — please try again.';
-        status.className = 'form-status error visible';
-        btn.textContent = 'Send message';
-        btn.disabled = false;
-      }
-    });
-  </script>
 
 </body>
 </html>
