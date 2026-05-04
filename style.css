@@ -397,7 +397,8 @@ main {
 .companies-row {
   display: flex;
   align-items: center;
-  gap: 44px;
+  justify-content: space-between;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
@@ -405,23 +406,23 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30px;
-  opacity: 0.4;
-  transition: opacity 0.2s ease;
   cursor: default;
 }
 
-.company-icon:hover {
-  opacity: 1;
-}
-
 .company-icon img {
-  max-height: 100%;
-  max-width: 100px;
   width: auto;
   object-fit: contain;
-  filter: grayscale(1) contrast(1.2);
+  display: block;
+  /* default height — overridden per logo below */
+  height: 32px;
 }
+
+/* Per-logo height tuning for visual balance */
+.logo-1password { height: 30px; }
+.logo-cisco     { height: 44px; }
+.logo-duo       { height: 40px; }
+.logo-mckinsey  { height: 34px; }
+.logo-frog      { height: 26px; }
 
 .logo-fallback {
   font-size: 12px;
@@ -577,7 +578,15 @@ footer a:hover {
     gap: 28px;
   }
 
-  .companies-row { gap: 24px; }
+  .companies-row {
+    gap: 28px;
+    justify-content: center;
+  }
+  .logo-1password { height: 24px; }
+  .logo-cisco     { height: 36px; }
+  .logo-duo       { height: 32px; }
+  .logo-mckinsey  { height: 28px; }
+  .logo-frog      { height: 20px; }
 
   footer {
     padding: 28px 6vw 40px;
