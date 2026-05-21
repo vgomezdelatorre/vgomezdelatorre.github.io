@@ -6,41 +6,125 @@
   <title>vgdlt — Valerie Gomez de la Torre</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .intro-headline {
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      color: #1C1C1C;
+      margin-bottom: 36px;
+      max-width: 760px;
+    }
+
+    .intro-headline em {
+      font-style: italic;
+      font-weight: 500;
+    }
+
+    .intro-text {
+      max-width: 640px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .intro-text p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.8;
+      color: #1C1C1C;
+    }
+
+    .intro-companies {
+      margin-top: 64px;
+      padding: 32px 48px;
+      border: 1px solid #BBBDBC;
+      border-radius: 8px;
+    }
+
+    .intro-companies-label {
+      display: block;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #5C5C5C;
+      margin-bottom: 28px;
+    }
+
+    .companies-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .company-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: default;
+    }
+
+    .company-icon img {
+      width: auto;
+      object-fit: contain;
+      display: block;
+      height: 32px;
+    }
+
+    .logo-1password { height: 30px; }
+    .logo-cisco     { height: 44px; }
+    .logo-duo       { height: 40px; }
+    .logo-mckinsey  { height: 34px; }
+    .logo-frog      { height: 26px; }
+
+    @media (max-width: 700px) {
+      .intro-companies {
+        padding: 24px 24px;
+      }
+      .companies-row {
+        gap: 28px;
+        justify-content: center;
+      }
+      .logo-1password { height: 24px; }
+      .logo-cisco     { height: 36px; }
+      .logo-duo       { height: 32px; }
+      .logo-mckinsey  { height: 28px; }
+      .logo-frog      { height: 20px; }
+    }
+  </style>
 </head>
 <body>
 
   <header>
-    <a href="#top" class="site-name">vgdlt</a>
+    <a href="index.html" class="site-name">vgdlt</a>
     <nav>
-      <a href="#intro">Style</a>
       <a href="work.html">Work</a>
-      <a href="thoughts.html">Thoughts</a>
+      <a href="playbook.html">Playbook</a>
       <a href="me.html">Me</a>
     </nav>
   </header>
 
   <main>
 
-    <!-- ── Intro: hero + leadership + companies ── -->
-    <section id="top" class="section-intro">
+    <section id="top" style="padding: 72px 0 80px;">
 
-      <h1 class="intro-headline">Building products<br>and the people behind them.</h1>
+      <h1 class="intro-headline">Hi, I'm Valerie Gomez de la Torre. <em>Yes, you can call me Val.</em></h1>
 
-      <div id="intro" class="intro-body">
-        <div class="intro-text">
-          <p>My leadership style is a blend of servant + player-coach.</p>
-          <p>I call it <mark class="highlight">Enablement Leadership.</mark><br>
-          It combines support with accountability and reflects an active role in creating the conditions for success.</p>
-          <p>I enable designers to think critically, collaborate effectively across disciplines, navigate constraints with confidence, and grow their craft while delivering meaningful outcomes. I enable product managers by grounding decisions in strong research and shared priorities. I enable marketing partners by aligning the in-product experience with external messaging so the story feels cohesive. I enable engineering by making the "why" behind design decisions visible and inviting their ideas early, so direction is shaped together rather than handed down.</p>
-          <p>I enable how people, process, and product interact and make decisions, building trust along the way. With trust in place, we align on today's priorities while shaping strategy for what needs to scale tomorrow.</p>
-          <p class="leadership-closing">If you enable people to do what they do best. Trust grows. Great work follows.</p>
-          <a href="me.html" class="link-more">Learn more →</a>
-        </div>
+      <div class="intro-text">
+        <p>I have 12+ years of design leadership experience across startups, consulting, and enterprise SaaS. I've led teams through acquisitions, platform shifts, and zero-to-one enterprise initiatives.</p>
+        <p>But let's be honest. What you really need is someone who can quickly read the situation, identify the leaks and gaps, and enable the team to deliver a better outcome; not just output.</p>
+        <p>That's me. I'm a fixer. I untangle complexity and deliver.</p>
+        <p>The industry is shifting faster than it has in a decade. AI is rewriting what design teams do and how they do it. Roadmaps are getting compressed, headcount is getting harder to justify, and the design work that mattered five years ago isn't always the design work that matters now. What you need is someone who's been through enough technology shifts to know how to adapt when the ground moves, stay curious when it's time to learn new tools and new ways of working, and coach the team to do the same.</p>
+        <p>I built this portfolio for you. I wanted to share what I have done and how I think so you can get a feel for what it would be like working alongside me.</p>
+        <p>Reach out when you're ready. I'd love to connect.</p>
       </div>
 
-      <!-- Where I Have Worked — part of intro -->
       <div class="intro-companies">
         <span class="intro-companies-label">Where I have worked</span>
         <div class="companies-row">
@@ -62,97 +146,6 @@
         </div>
       </div>
 
-    </section>
-
-    <!-- ── Work ── -->
-    <section id="work" class="section">
-      <div class="section-header">
-        <h2>Work</h2>
-      </div>
-      <div class="work-grid">
-
-        <a href="work-1.html" class="work-card">
-          <div class="work-index">01</div>
-          <div class="work-thumb">
-            <img src="assets/work-1.jpg" alt="Project One" onerror="this.style.display='none'" />
-            <span class="thumb-placeholder">01</span>
-          </div>
-          <div class="work-meta">
-            <h3>Project Title One</h3>
-            <p>A short summary of this project, the problem it solved, and the impact it had on users or the business.</p>
-            <div class="pills">
-              <span class="pill">Systems Thinking</span>
-              <span class="pill">Influencing</span>
-              <span class="pill">Project Management</span>
-            </div>
-          </div>
-        </a>
-
-        <a href="work-2.html" class="work-card">
-          <div class="work-index">02</div>
-          <div class="work-thumb">
-            <img src="assets/work-2.jpg" alt="Project Two" onerror="this.style.display='none'" />
-            <span class="thumb-placeholder">02</span>
-          </div>
-          <div class="work-meta">
-            <h3>Project Title Two</h3>
-            <p>A short summary of this project, the problem it solved, and the impact it had on users or the business.</p>
-            <div class="pills">
-              <span class="pill">Research</span>
-              <span class="pill">Cross-functional</span>
-              <span class="pill">Design Systems</span>
-            </div>
-          </div>
-        </a>
-
-        <a href="work-3.html" class="work-card">
-          <div class="work-index">03</div>
-          <div class="work-thumb">
-            <img src="assets/work-3.jpg" alt="Project Three" onerror="this.style.display='none'" />
-            <span class="thumb-placeholder">03</span>
-          </div>
-          <div class="work-meta">
-            <h3>Project Title Three</h3>
-            <p>A short summary of this project, the problem it solved, and the impact it had on users or the business.</p>
-            <div class="pills">
-              <span class="pill">Strategy</span>
-              <span class="pill">Stakeholder Mgmt</span>
-              <span class="pill">Craft</span>
-            </div>
-          </div>
-        </a>
-
-        <a href="work-4.html" class="work-card">
-          <div class="work-index">04</div>
-          <div class="work-thumb">
-            <img src="assets/work-4.jpg" alt="Project Four" onerror="this.style.display='none'" />
-            <span class="thumb-placeholder">04</span>
-          </div>
-          <div class="work-meta">
-            <h3>Project Title Four</h3>
-            <p>A short summary of this project, the problem it solved, and the impact it had on users or the business.</p>
-            <div class="pills">
-              <span class="pill">Leadership</span>
-              <span class="pill">Mentorship</span>
-              <span class="pill">Vision</span>
-            </div>
-          </div>
-        </a>
-
-      </div>
-    </section>
-
-    <!-- ── Latest Thought ── -->
-    <section id="thoughts-preview" class="section section-thought">
-      <div class="section-header">
-        <h2>Thoughts</h2>
-      </div>
-      <a href="thoughts.html" class="thought-preview">
-        <span class="thought-date">April 2026</span>
-        <h3 class="thought-title">On trust as infrastructure</h3>
-        <p class="thought-excerpt">I've been thinking about trust less as a soft thing and more as infrastructure. The same way a building needs plumbing and wiring before walls go up, teams need trust before real collaboration can happen. It's load-bearing&hellip;</p>
-        <span class="thought-read-more">Read more →</span>
-      </a>
     </section>
 
   </main>

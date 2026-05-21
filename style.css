@@ -86,9 +86,25 @@ nav a {
   transition: color 0.15s ease;
 }
 
-nav a:hover,
-nav a.active {
+nav a:hover {
   color: #245F73;
+}
+
+nav a.active {
+  background: linear-gradient(
+    104deg,
+    transparent 0%,
+    rgba(255, 213, 0, 0.6) 2%,
+    rgba(255, 213, 0, 0.5) 95%,
+    transparent 99%
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: 0.2em 0.4em;
+  margin: 0 -0.4em;
+  border-radius: 2px;
+  color: #1C1C1C;
+  font-weight: 700;
 }
 
 /* ─── Main ─── */

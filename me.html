@@ -9,242 +9,167 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* ── Me-page specific styles ── */
-
-    .me-hero {
-      padding: 64px 0 56px;
+    .me-page-hero {
+      padding: 64px 0 52px;
       border-bottom: 1px solid #BBBDBC;
-      display: flex;
-      align-items: center;
-      gap: 48px;
     }
 
-    .me-photo {
-      flex-shrink: 0;
-      width: 200px;
-      height: 200px;
-      border-radius: 20px;
+    .me-page-hero h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+      color: #1C1C1C;
+    }
+
+    /* ── Photo row ── */
+    .me-photos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      padding: 48px 0 0;
+    }
+
+    .me-photo-placeholder {
+      aspect-ratio: 4 / 3;
       background-color: #E5E3E1;
       border: 2px dashed #BBBDBC;
+      border-radius: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
-    .me-photo span {
+    .me-photo-placeholder span {
       font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 0.08em;
+      font-weight: 600;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: #BBBDBC;
     }
 
-    .me-intro h1 {
-      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      line-height: 1.1;
-      color: #1C1C1C;
-      margin-bottom: 16px;
-    }
-
-    .me-intro p {
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 1.75;
-      color: #5C5C5C;
-      max-width: 520px;
-    }
-
-    /* ── Bio sections ── */
-    .me-body {
-      display: grid;
-      grid-template-columns: 200px 1fr;
-      gap: 0 48px;
-    }
-
-    .me-section {
+    /* ── Bio ── */
+    .me-bio {
       padding: 52px 0;
       border-bottom: 1px solid #BBBDBC;
-      display: contents;
+      max-width: 640px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     }
 
-    .me-section-label {
-      padding: 52px 0;
-      border-bottom: 1px solid #BBBDBC;
-    }
-
-    .me-section-label h2 {
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: #733E24;
-      padding-top: 4px;
-    }
-
-    .me-section-content {
-      padding: 52px 0;
-      border-bottom: 1px solid #BBBDBC;
-    }
-
-    .me-section-content p {
+    .me-bio p {
       font-size: 16px;
       font-weight: 400;
       line-height: 1.8;
       color: #5C5C5C;
-      margin-bottom: 14px;
     }
 
-    .me-section-content p:last-child {
-      margin-bottom: 0;
-    }
-
-    .me-section-content strong {
+    .me-bio strong {
       font-weight: 600;
       color: #1C1C1C;
     }
 
-    /* ── Contact form ── */
-    .me-section-content .contact-form {
-      max-width: 100%;
+    /* ── Contact ── */
+    .me-contact {
+      padding: 52px 0 80px;
+      max-width: 640px;
     }
 
-    /* ── Active nav ── */
-    nav a.active {
-      color: #245F73;
+    .me-contact-intro {
+      font-size: 15px;
+      color: #5C5C5C;
+      margin-bottom: 28px;
+    }
+
+    .me-contact-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
     }
 
     @media (max-width: 700px) {
-      .me-hero {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 28px;
-        padding: 48px 0 40px;
-      }
-
-      .me-photo {
-        width: 120px;
-        height: 120px;
-        border-radius: 14px;
-      }
-
-      .me-body {
+      .me-photos {
         grid-template-columns: 1fr;
-      }
-
-      .me-section-label {
-        padding: 40px 0 0;
-        border-bottom: none;
-      }
-
-      .me-section-content {
-        padding: 16px 0 40px;
+        gap: 12px;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
   <header>
     <a href="index.html" class="site-name">vgdlt</a>
     <nav>
-      <a href="index.html#intro">Style</a>
       <a href="work.html">Work</a>
-      <a href="thoughts.html">Thoughts</a>
+      <a href="playbook.html">Playbook</a>
       <a href="me.html" class="active">Me</a>
     </nav>
   </header>
 
   <main>
 
-    <!-- Intro -->
-    <div class="me-hero">
-      <div class="me-photo">
-        <span>Photo</span>
-      </div>
-      <div class="me-intro">
-        <h1>Valerie Gomez<br>de la Torre</h1>
-        <p>Design leader, people enabler, and product thinker. I build the conditions for great work — and the teams that do it.</p>
-      </div>
+    <div class="me-page-hero">
+      <h1>Me</h1>
     </div>
 
-    <!-- Body grid -->
-    <div class="me-body">
+    <!-- Photo placeholders -->
+    <div class="me-photos">
+      <div class="me-photo-placeholder"><span>Image</span></div>
+      <div class="me-photo-placeholder"><span>Image</span></div>
+      <div class="me-photo-placeholder"><span>Image</span></div>
+    </div>
 
-      <!-- About -->
-      <div class="me-section-label">
-        <h2>About</h2>
-      </div>
-      <div class="me-section-content">
-        <p>I'm a design leader with experience spanning product design, design systems, and cross-functional strategy. My work lives at the intersection of craft and clarity — I care equally about the quality of the pixels and the quality of the decisions that produced them.</p>
-        <p>I've led teams across early-stage startups and scaled organizations, and I've found that the fundamentals are consistent: build trust, make the work visible, and create the conditions for people to do their best thinking.</p>
+    <!-- Bio -->
+    <div class="me-bio">
+      <p>I'm a design leader with experience spanning product design, design systems, and cross-functional strategy. My work lives at the intersection of craft and clarity — I care equally about the quality of the pixels and the quality of the decisions that produced them.</p>
+      <p>I've led teams across early-stage startups and scaled organizations, and I've found that the fundamentals are consistent: build trust, make the work visible, and create the conditions for people to do their best thinking.</p>
+      <p><strong>Open to new opportunities.</strong> I'm looking for roles where design has a seat at the table, where there's genuine investment in craft, and where I can help shape both the product and the team building it.</p>
+      <p>I'm particularly drawn to companies working on complex, meaningful problems — products where the design decisions genuinely matter to the people using them.</p>
+      <p>I think a lot about systems — design systems, team systems, habit systems. I'm an avid reader, a slow runner, and someone who believes that the best ideas often come from the least expected places.</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="me-contact">
+      <p class="me-contact-intro">Have something in mind? I'd love to hear from you.</p>
+
+      <div class="me-contact-links">
+        <a href="mailto:valeriegomez@gmail.com" style="display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:600; color:#245F73; text-decoration:none; padding:10px 18px; border:1.5px solid #BBBDBC; border-radius:6px; transition:border-color 0.15s ease;" onmouseover="this.style.borderColor='#245F73'" onmouseout="this.style.borderColor='#BBBDBC'">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Email me
+        </a>
+        <a href="https://linkedin.com/in/valeriegomezdelatorre" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:600; color:#245F73; text-decoration:none; padding:10px 18px; border:1.5px solid #BBBDBC; border-radius:6px; transition:border-color 0.15s ease;" onmouseover="this.style.borderColor='#245F73'" onmouseout="this.style.borderColor='#BBBDBC'">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
       </div>
 
-      <!-- Currently -->
-      <div class="me-section-label">
-        <h2>Currently</h2>
-      </div>
-      <div class="me-section-content">
-        <p><strong>Open to new opportunities.</strong> I'm looking for roles where design has a seat at the table, where there's genuine investment in craft, and where I can help shape both the product and the team building it.</p>
-        <p>I'm particularly drawn to companies working on complex, meaningful problems — products where the design decisions genuinely matter to the people using them.</p>
-      </div>
-
-      <!-- Outside work -->
-      <div class="me-section-label">
-        <h2>Outside work</h2>
-      </div>
-      <div class="me-section-content">
-        <p>I think a lot about systems — design systems, team systems, habit systems. I'm an avid reader, a slow runner, and someone who believes that the best ideas often come from the least expected places.</p>
-        <p>I write occasionally in <a href="thoughts.html" style="color:#245F73; text-decoration:none; border-bottom: 1px solid #BBBDBC;">Thoughts</a> when something is worth working through in words.</p>
-      </div>
-
-      <!-- Contact -->
-      <div class="me-section-label">
-        <h2>Contact</h2>
-      </div>
-      <div class="me-section-content">
-        <p class="contact-intro">Have something in mind? I'd love to hear from you.</p>
-
-        <!-- Quick contact links -->
-        <div style="display:flex; gap:16px; margin-bottom:32px; flex-wrap:wrap;">
-          <a href="mailto:valeriegomez@gmail.com" style="display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:600; color:#245F73; text-decoration:none; padding:10px 18px; border:1.5px solid #BBBDBC; border-radius:6px; transition:border-color 0.15s ease;" onmouseover="this.style.borderColor='#245F73'" onmouseout="this.style.borderColor='#BBBDBC'">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-            Email me
-          </a>
-          <a href="https://linkedin.com/in/valeriegomezdelatorre" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:600; color:#245F73; text-decoration:none; padding:10px 18px; border:1.5px solid #BBBDBC; border-radius:6px; transition:border-color 0.15s ease;" onmouseover="this.style.borderColor='#245F73'" onmouseout="this.style.borderColor='#BBBDBC'">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-            LinkedIn
-          </a>
+      <form
+        class="contact-form"
+        id="contact-form"
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+        novalidate
+      >
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" />
         </div>
-        <form
-          class="contact-form"
-          id="contact-form"
-          action="https://formspree.io/f/YOUR_FORM_ID"
-          method="POST"
-          novalidate
-        >
-          <div class="form-row">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" />
-          </div>
-          <div class="form-row">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
-          </div>
-          <div class="form-row">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
-          </div>
-          <div class="form-actions">
-            <button type="submit" class="btn-submit" id="submit-btn">Send message</button>
-            <span class="form-status" id="form-status" role="status" aria-live="polite"></span>
-          </div>
-        </form>
-      </div>
-
-    </div><!-- /me-body -->
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn-submit" id="submit-btn">Send message</button>
+          <span class="form-status" id="form-status" role="status" aria-live="polite"></span>
+        </div>
+      </form>
+    </div>
 
   </main>
 
