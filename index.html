@@ -3,157 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>vgdlt — Valerie Gomez de la Torre</title>
+  <title>Valerie Gomez de la Torre — Design Leader</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    .intro-headline {
-      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      line-height: 1.15;
-      color: #1C1C1C;
-      margin-bottom: 36px;
-      max-width: 760px;
-    }
-
-    .intro-headline em {
-      font-style: italic;
-      font-weight: 500;
-    }
-
-    .intro-text {
-      max-width: 640px;
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-    }
-
-    .intro-text p {
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 1.8;
-      color: #1C1C1C;
-    }
-
-    .intro-companies {
-      margin-top: 64px;
-      padding: 32px 48px;
-      border: 1px solid #BBBDBC;
-      border-radius: 8px;
-    }
-
-    .intro-companies-label {
-      display: block;
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: #5C5C5C;
-      margin-bottom: 28px;
-    }
-
-    .companies-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-
-    .company-icon {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: default;
-    }
-
-    .company-icon img {
-      width: auto;
-      object-fit: contain;
-      display: block;
-      height: 32px;
-    }
-
-    .logo-1password { height: 30px; }
-    .logo-cisco     { height: 44px; }
-    .logo-duo       { height: 40px; }
-    .logo-mckinsey  { height: 34px; }
-    .logo-frog      { height: 26px; }
-
-    @media (max-width: 700px) {
-      .intro-companies {
-        padding: 24px 24px;
-      }
-      .companies-row {
-        gap: 28px;
-        justify-content: center;
-      }
-      .logo-1password { height: 24px; }
-      .logo-cisco     { height: 36px; }
-      .logo-duo       { height: 32px; }
-      .logo-mckinsey  { height: 28px; }
-      .logo-frog      { height: 20px; }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=46" />
 </head>
 <body>
 
-  <header>
-    <a href="index.html" class="site-name">vgdlt</a>
-    <nav>
-      <a href="work.html">Work</a>
-      <a href="playbook.html">Playbook</a>
-      <a href="me.html">Me</a>
-    </nav>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">vgdlt</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
   </header>
-
   <main>
-
-    <section id="top" style="padding: 72px 0 80px;">
-
-      <h1 class="intro-headline">Hi, I'm Valerie Gomez de la Torre. <em>Yes, you can call me Val.</em></h1>
-
-      <div class="intro-text">
-        <p>I have 12+ years of design leadership experience across startups, consulting, and enterprise SaaS. I've led teams through acquisitions, platform shifts, and zero-to-one enterprise initiatives.</p>
-        <p>But let's be honest. What you really need is someone who can quickly read the situation, identify the leaks and gaps, and enable the team to deliver a better outcome; not just output.</p>
-        <p>That's me. I'm a fixer. I untangle complexity and deliver.</p>
-        <p>The industry is shifting faster than it has in a decade. AI is rewriting what design teams do and how they do it. Roadmaps are getting compressed, headcount is getting harder to justify, and the design work that mattered five years ago isn't always the design work that matters now. What you need is someone who's been through enough technology shifts to know how to adapt when the ground moves, stay curious when it's time to learn new tools and new ways of working, and coach the team to do the same.</p>
-        <p>I built this portfolio for you. I wanted to share what I have done and how I think so you can get a feel for what it would be like working alongside me.</p>
-        <p>Reach out when you're ready. I'd love to connect.</p>
+    <section class="section section-intro section-alt">
+      <div class="wrap">
+        <div class="hero-copy thesis">
+          <span class="eyebrow">Valerie Gomez de la Torre &nbsp;&middot;&nbsp; Design Leadership</span>
+          <h1 class="display">I&rsquo;m a designer, a manager, a leader, <span class="nowrap">and a systems thinker.</span></h1>
+        </div>
       </div>
+    </section>
 
-      <div class="intro-companies">
-        <span class="intro-companies-label">Where I have worked</span>
-        <div class="companies-row">
-          <div class="company-icon" title="1Password">
-            <img src="assets/logos/1password.svg" alt="1Password" class="logo-1password" />
-          </div>
-          <div class="company-icon" title="Cisco">
-            <img src="assets/logos/cisco.svg" alt="Cisco" class="logo-cisco" />
-          </div>
-          <div class="company-icon" title="Duo">
-            <img src="assets/logos/duo.svg" alt="Duo" class="logo-duo" />
-          </div>
-          <div class="company-icon" title="McKinsey & Company">
-            <img src="assets/logos/mckinsey.svg" alt="McKinsey & Company" class="logo-mckinsey" />
-          </div>
-          <div class="company-icon" title="frog">
-            <img src="assets/logos/frog.svg" alt="frog" class="logo-frog" />
+    <section class="standfirst">
+      <div class="wrap">
+        <p class="standfirst-text">Together, these perspectives shape how I understand problems, support people, and create the conditions for people to grow, teams to thrive, and strong work to drive meaningful outcomes.</p>
+      </div>
+    </section>
+
+    <section class="section section-intro">
+      <div class="wrap">
+        <div class="para">
+          <span class="runin">I call my approach <strong>Enablement Leadership</strong>:</span>
+          <p>Helping people do their best work while creating the clarity, accountability, and conditions that allow that work to succeed. I start by understanding what a team needs, what&rsquo;s getting in its way, and where I can have the greatest impact.</p>
+        </div>
+        <div class="para">
+          <span class="runin">My design practice and my management practice aren&rsquo;t separate.</span>
+          <p>Both start with understanding people, context, and the problem underneath the problem. As a designer, I use that thinking to shape products and experiences. As a manager, I use it to understand what people need, where teams are getting stuck, and what needs to change around them. That&rsquo;s the foundation of Enablement Leadership.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight section-alt">
+      <div class="wrap logos-center">
+        <p class="logos-note">22 years in design, 12+ leading teams, across startups, consulting, and enterprise SaaS, through acquisitions, platform shifts, and zero-to-one enterprise initiatives.</p>
+        <div class="logos">
+          <div class="logo-row">
+            <img class="logo-1password" src="assets/logos/1password-wordmark.svg" alt="1Password" />
+            <img class="logo-cisco" src="assets/logos/cisco.svg" alt="Cisco" />
+            <img class="logo-duo" src="assets/logos/duo.svg" alt="Duo Security" />
+            <img class="logo-mckinsey" src="assets/logos/mckinsey.svg" alt="McKinsey &amp; Company" />
+            <img class="logo-frog" src="assets/logos/frog.svg" alt="frog design" />
+            <img class="logo-att" src="assets/logos/att.svg" alt="AT&amp;T" />
+            <img class="logo-hp" src="assets/logos/hp.svg" alt="HP" />
           </div>
         </div>
       </div>
-
     </section>
 
+    <section class="section">
+      <div class="wrap">
+        <div class="lens-list">
+          <div class="lens-row">
+            <h2>As a designer</h2>
+            <p>I start with customers and their problems. I make sense of complexity, explore before deciding, and care about the quality of what we put into the world. I&rsquo;m not designing every screen, but I stay close to the work through critique, patterns, systems, and product thinking, so I understand the decisions being made and can ask useful questions when something isn&rsquo;t working.</p>
+          </div>
+          <div class="lens-row">
+            <h2>As a manager</h2>
+            <p>I focus on people, starting with the team that&rsquo;s already there. I build on complementary strengths, coach designers from early career through senior and staff levels, set clear expectations, give direct feedback, and know when someone needs support versus room to lead. When the team needs to grow, I&rsquo;ve built the hiring process end to end: defining roles, designing interview loops, running behavioral interviews, and making the call. Strong teams still need the right environment, so I pay attention to the structure, trust, and rituals that let people succeed.</p>
+          </div>
+          <div class="lens-row">
+            <h2>As a leader</h2>
+            <p>I create direction and align people around what matters. I translate strategy into design priorities, make the why behind decisions visible, and help teams keep moving when the path is still forming and nobody has all the answers yet.</p>
+          </div>
+          <div class="lens-row">
+            <h2>As a systems thinker</h2>
+            <p>I look at how people, product, process, and business decisions connect. When something isn&rsquo;t working, I try not to stop at the visible problem. A product issue might be an ownership problem. Rework might point to a missing conversation upstream.</p>
+          </div>
+        </div>
+
+        <div class="more">
+          <p class="lede lede-ink">I built this portfolio for you.</p>
+          <p>It&rsquo;s where I share a few stories from my work and the principles I lead by, so you can get a feel for what it&rsquo;s like to work alongside me.</p>
+          <p>This site is a work in progress, which is true of most things worth doing. One case study is live so far. The rest are still in critique.</p>
+          <p>Reach out when you&rsquo;re ready. I&rsquo;d love to connect.</p>
+          <div class="btn-row">
+            <a class="btn" href="work.html">See the work</a>
+            <a class="btn btn-ghost" href="about.html">Learn more about me</a>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section section-dark">
+      <div class="wrap center stack">
+        <span class="eyebrow">Let<span class="eyebrow">Get in touch</span>rsquo;s talk</span>
+        <p class="lede">Curious about the work, the thinking behind it, or what we could do together? I&rsquo;d love to connect.</p>
+        <div class="contact-row">
+          <span class="contact-item">
+            <span class="contact-email" id="contact-email">valeriegomez@gmail.com</span>
+            <button class="copy-btn" type="button" data-copy="valeriegomez@gmail.com" aria-label="Copy email address" title="Copy email">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 5.5V3.5A1 1 0 0 0 9.5 2.5h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2"/></svg>
+              <span class="copy-feedback" aria-live="polite"></span>
+            </button>
+          </span>
+          <span class="contact-sep" aria-hidden="true">&middot;</span>
+          <a class="contact-link" href="https://linkedin.com/in/valeriegomezdelatorre" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <span>© 2026 Valerie Gomez de la Torre</span>
-    <a href="mailto:valeriegomez@gmail.com">valeriegomez@gmail.com</a>
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; 2026 Valerie Gomez de la Torre</span>
+    </div>
   </footer>
 
+<script>
+  document.querySelectorAll('.copy-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var text = btn.getAttribute('data-copy');
+      var fb = btn.querySelector('.copy-feedback');
+      function done(ok) {
+        fb.textContent = ok ? 'Copied' : 'Press \u2318C';
+        btn.classList.add('is-copied');
+        setTimeout(function () { fb.textContent = ''; btn.classList.remove('is-copied'); }, 1600);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(false); });
+      } else {
+        var r = document.createRange(); r.selectNodeContents(document.getElementById('contact-email'));
+        var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(r);
+        done(document.execCommand && document.execCommand('copy'));
+      }
+    });
+  });
+</script>
 </body>
 </html>

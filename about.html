@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Valerie Gomez de la Torre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=46" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">vgdlt</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="work.html">Work</a>
+        <a href="about.html" aria-current="page">About</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="section">
+      <div class="wrap stack-lg">
+        <div class="page-head">
+          <span class="eyebrow">About me</span>
+          <h1>A little backstory</h1>
+        </div>
+
+        <div class="story">
+          <p>I&rsquo;ve always noticed when something feels harder than it should.</p>
+          <p>As a kid, I redesigned my dollhouses because the layouts didn&rsquo;t make sense to me. My friends also learned pretty quickly that if I was in charge of an adventure, there was probably going to be a plan. When I got my first car at 16, I read the manual cover to cover. I genuinely wanted to know how everything worked.</p>
+          <p>As I got older, I became weirdly aware of wayfinding, whether it was confusing signs in a parking garage, airport lines that sent people in the wrong direction, or later, digital experiences where it wasn&rsquo;t clear what to do next.</p>
+          <p>I was always noticing the little moments where better information or a clearer path could make things easier for someone.</p>
+          <p>When I discovered <em>The Design of Everyday Things</em>, I finally realized there was a name for the way I saw the world, and that people actually made careers out of it.</p>
+          <p>There&rsquo;s another thread that has followed me for just as long.</p>
+          <p>I&rsquo;ve always loved helping people recognize and use their strengths.</p>
+          <p>In high school and college, I was the friend signing artists up for competitions and helping musicians find gigs. For a while, I even thought I&rsquo;d become a casting agent.</p>
+          <p>I&rsquo;ve never needed to be the person in the spotlight. I like seeing potential, connecting dots, and helping things come together.</p>
+          <p>That&rsquo;s still what keeps me interested in the work today. The problems are bigger now, and often involve teams, organizations, products, and systems rather than elevator buttons, but the instinct is the same: understand what&rsquo;s getting in the way and find a better way through it.</p>
+          <p>These days I live in Austin with my two kids and our dog, Violet. My family is from Ecuador, and that&rsquo;s an important part of who I am.</p>
+          <p>I love the beach, the mountains, big cities, and spending time with family and friends. I also keep doing things that scare me a little, like learning to sail on the ocean despite being afraid of deep water.</p>
+          <p>Someday I&rsquo;d love to paint.</p>
+          <p>For now, coloring books are doing a pretty good job.</p>
+        </div>
+
+        <div class="mosaic">
+          <img src="assets/about-kids.jpg" alt="Valerie with her two kids on a night out" />
+          <img src="assets/about-beach.jpg" alt="Feet up on a porch rail looking out at the water and a sailboat" />
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+    <section class="section section-dark">
+      <div class="wrap center stack">
+        <span class="eyebrow">Let<span class="eyebrow">Get in touch</span>rsquo;s talk</span>
+        <p class="lede">Curious about the work, the thinking behind it, or what we could do together? I&rsquo;d love to connect.</p>
+        <div class="contact-row">
+          <span class="contact-item">
+            <span class="contact-email" id="contact-email">valeriegomez@gmail.com</span>
+            <button class="copy-btn" type="button" data-copy="valeriegomez@gmail.com" aria-label="Copy email address" title="Copy email">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 5.5V3.5A1 1 0 0 0 9.5 2.5h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2"/></svg>
+              <span class="copy-feedback" aria-live="polite"></span>
+            </button>
+          </span>
+          <span class="contact-sep" aria-hidden="true">&middot;</span>
+          <a class="contact-link" href="https://linkedin.com/in/valeriegomezdelatorre" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; 2026 Valerie Gomez de la Torre</span>
+    </div>
+  </footer>
+
+<script>
+  document.querySelectorAll('.copy-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var text = btn.getAttribute('data-copy');
+      var fb = btn.querySelector('.copy-feedback');
+      function done(ok) {
+        fb.textContent = ok ? 'Copied' : 'Press \u2318C';
+        btn.classList.add('is-copied');
+        setTimeout(function () { fb.textContent = ''; btn.classList.remove('is-copied'); }, 1600);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(false); });
+      } else {
+        var r = document.createRange(); r.selectNodeContents(document.getElementById('contact-email'));
+        var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(r);
+        done(document.execCommand && document.execCommand('copy'));
+      }
+    });
+  });
+</script>
+</body>
+</html>
