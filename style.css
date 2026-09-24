@@ -533,7 +533,8 @@ hr, .rule { border: 0; height: 0; border-top: 1px solid var(--line); margin: 0; 
 
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
-  .hero { grid-template-columns: 1fr; }
+  .hero { grid-template-columns: minmax(0, 1fr); }
+  .portrait { max-width: 280px; }
   .portrait { justify-self: start; max-width: 320px; order: -1; }
   .photo-grid { grid-template-columns: repeat(2, 1fr); }
   .mosaic { grid-template-columns: repeat(2, 1fr); }
