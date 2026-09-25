@@ -1,15 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="gate-active">
 <head>
   <meta charset="UTF-8" />
+  <script>
+    if (localStorage.getItem('vgdlt_unlocked') === '1') {
+      document.documentElement.classList.remove('gate-active');
+    }
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Valerie Gomez de la Torre — Design Leader</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=47" />
+  <link rel="stylesheet" href="style.css?v=48" />
 </head>
 <body>
+
+  <div id="gate">
+    <div class="gate-card">
+      <span class="eyebrow">Private</span>
+      <h1>This portfolio is private.</h1>
+      <p>Enter the password to continue.</p>
+      <form class="gate-form" id="gate-form">
+        <input class="gate-input" id="gate-input" type="password" placeholder="Password" autocomplete="off" required />
+        <button class="btn" type="submit">Enter</button>
+        <span class="gate-error" id="gate-error">That&rsquo;s not quite right. Try again.</span>
+      </form>
+    </div>
+  </div>
 
   <header class="site-header">
     <div class="wrap nav">
@@ -147,5 +165,6 @@
     });
   });
 </script>
+  <script src="assets/gate.js" defer></script>
 </body>
 </html>
