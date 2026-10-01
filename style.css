@@ -286,15 +286,50 @@ hr, .rule { border: 0; height: 0; border-top: 1px solid var(--line); margin: 0; 
 }
 .hero-copy > * + * { margin-top: 24px; }
 .hero-copy .display { margin-top: 16px; }
-.portrait {
+.portrait-wrap {
+  position: relative;
   aspect-ratio: 1 / 1;
   width: 100%;
   max-width: 420px;
   justify-self: end;
   border-radius: var(--r-xl);
   border: 1px solid var(--line-strong);
+  overflow: hidden;
+}
+.portrait {
+  width: 100%;
+  height: 100%;
+  display: block;
   object-fit: cover;
   overflow: hidden;
+}
+.portrait-credit {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(17, 24, 39, 0.78);
+  color: var(--white);
+  font-size: 11px;
+  line-height: 1.4;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  pointer-events: none;
+}
+.portrait-wrap:hover .portrait-credit,
+.portrait-wrap:focus-within .portrait-credit {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.portrait-credit a {
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .logos { margin-top: 32px; }
@@ -534,8 +569,7 @@ hr, .rule { border: 0; height: 0; border-top: 1px solid var(--line); margin: 0; 
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
   .hero { grid-template-columns: minmax(0, 1fr); }
-  .portrait { max-width: 280px; }
-  .portrait { justify-self: start; max-width: 320px; order: -1; }
+  .portrait-wrap { justify-self: start; max-width: 320px; order: -1; }
   .photo-grid { grid-template-columns: repeat(2, 1fr); }
   .mosaic { grid-template-columns: repeat(2, 1fr); }
   .two-col { grid-template-columns: 1fr; }
