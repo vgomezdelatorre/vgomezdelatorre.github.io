@@ -325,6 +325,18 @@ hr, .rule { border: 0; height: 0; border-top: 1px solid var(--line); margin: 0; 
   transform: translateY(0);
   pointer-events: auto;
 }
+.credit-short { display: none; }
+/* No mouse to hover with: show the credit outright instead of hiding it forever,
+   and swap to the shorter label since it's permanently on screen */
+@media (hover: none) {
+  .portrait-credit {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  .credit-full { display: none; }
+  .credit-short { display: inline; }
+}
 .portrait-credit a {
   color: var(--white);
   font-weight: 700;
