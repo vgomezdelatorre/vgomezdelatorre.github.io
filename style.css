@@ -389,6 +389,39 @@ hr, .rule { border: 0; height: 0; border-top: 1px solid var(--line); margin: 0; 
 }
 .lens-row h2 { font-size: 21px; line-height: 1.3; }
 .lens-row p { max-width: 60ch; }
+.lens-quote { margin: 22px 0 0; max-width: 60ch; }
+.lens-quote blockquote { margin: 0; color: var(--ink); font-size: 17px; line-height: 1.5; }
+.lens-quote figcaption {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+
+/* Full recommendations: a button that opens them in place */
+.recs { margin-top: clamp(32px, 4vw, 48px); }
+.recs-lead { color: var(--muted); margin-bottom: 16px; }
+.recs summary { list-style: none; cursor: pointer; }
+.recs summary::-webkit-details-marker { display: none; }
+.recs summary:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+.recs .when-open { display: none; }
+.recs details[open] .when-closed { display: none; }
+.recs details[open] .when-open { display: inline; }
+.recs-body { margin-top: 28px; display: grid; gap: 28px; max-width: 880px; }
+.rec { margin: 0; padding-top: 28px; border-top: 1px solid var(--line); }
+.rec blockquote { margin: 0; }
+.rec blockquote p { max-width: none; }
+.rec blockquote p + p { margin-top: 1em; }
+.rec figcaption {
+  margin-top: 16px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
 .more { margin-top: clamp(40px, 6vw, 56px); }
 .more > * + * { margin-top: 24px; }
 .more .lede, .more p { max-width: 880px; }
